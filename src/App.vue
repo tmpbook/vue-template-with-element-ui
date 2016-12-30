@@ -1,22 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <NavMenu></NavMenu>
+    <Container></Container>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import './components/common/style.scss'
+import NavMenu from './components/common/NavMenu.vue'
+import Container from './components/common/Container.vue'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    NavMenu,
+    Container
   }
 }
 </script>
-
-<style lang="sass">
-body
-  background: slateblue;
-</style>
