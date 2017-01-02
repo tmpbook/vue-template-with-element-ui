@@ -50,8 +50,17 @@ const mutations = {
   }
 }
 
+const actions = {
+  register ({ commit }, userId) {
+    setTimeout(() => {
+      commit('register', userId)
+    }, 500)
+  }
+}
+
 export const store = new Vuex.Store({
   state,
   getters,
-  mutations
+  mutations,
+  actions
 })
