@@ -5,6 +5,10 @@ export default [
   },
   {
     path: '/question',
-    component: resolve => require(['./pages/question'], resolve)
+    component: resolve => require(['./pages/question/question'], resolve)
+  },
+  {
+    path: '/user',
+    component: resolve => require(['./pages/user'], resolve)
   }
 ]
