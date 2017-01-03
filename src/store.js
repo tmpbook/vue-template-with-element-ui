@@ -5,6 +5,7 @@ Vue.use(Vuex)
 const state = {
   users: [
       {id: 1, name: 'Kevin', registered: false},
+      {id: 3, name: 'Aqua', registered: false},
       {id: 2, name: 'Jim', registered: false}
   ],
   registrations: []
