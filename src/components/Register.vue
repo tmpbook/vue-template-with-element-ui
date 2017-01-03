@@ -1,12 +1,13 @@
 <template>
   <div>
-    <el-card class="box-card">
+    <!--<el-card class="box-card">-->
       <h3>未注册用户</h3>
       <div v-for="user in users">
         <h4>{{ user.name }}</h4>
-        <el-button type="success" @click="registerUser(user)">注册</el-button>
+        <el-button type="success" size="small" @click="registerUser(user)">注册</el-button>
+        <hr>
       </div>
-    </el-card>
+    <!--</el-card>-->
   </div>
 </template>
 

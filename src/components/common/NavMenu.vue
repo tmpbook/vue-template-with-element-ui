@@ -2,8 +2,8 @@
   <el-menu default-active="1" id="nav-menu" theme="dark">
     <div class="logo">
       <router-link to="/">
-        <!--<img src="../../assets/images/logo.svg" />-->
-        <p>星辰</p>
+        <!--<img src="../../assets/images/vector_space_illust.svg" />-->
+        <p>tmpbook</p>
       </router-link>
     </div>
     <el-submenu index="1">
