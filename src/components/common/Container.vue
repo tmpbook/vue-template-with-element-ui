@@ -2,9 +2,7 @@
   <div id="container">
     <TopBar></TopBar>
     <transition>
-      <el-row :gutter="20">
-        <el-col :span="20" :offset="2"><router-view></router-view></el-col>
-      </el-row>
+      <router-view class='content'></router-view>
     </transition>
   </div>
 </template>
@@ -18,3 +16,7 @@ export default {
   }
 }
 </script>
+<style lang="sass">
+.content
+  padding: 10px;
+</style>
