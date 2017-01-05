@@ -16,7 +16,7 @@
 }
 #app {
   display: flex;
-  min-width: 1080px;
+  min-width: 800px;
   background-color: #1A191F;
   color: #dbdbdb;
 }
@@ -137,14 +137,14 @@
 
 // 左侧导航栏样式
 #nav-menu {
-  width: 240px;
-  min-width: 240px;
+  width: 200px;
+  min-width: 200px;
   height: calc(100%-72px);
   border-radius: 0;
   background-color: #20202A;
   box-shadow: 5px 0 20px rgba(0,0,0,.3);
   .logo {
-    width: 240px;
+    width: 200px;
     height: 60px;
     text-align: center;
     background-color: #20202A;
@@ -201,31 +201,44 @@ a {
 
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
+// .slide-fade-enter-active {
+//   animation: animate-in .6s;
+// }
+// .slide-fade-leave-active {
+//   animation: animate-out .6s;
+// }
+// @keyframes animate-in {
+//   0% {
+//     transform: scale(0);
+//   }
+//   50% {
+//     transform: scale(1.2);
+//   }
+//   100% {
+//     transform: scale(1);
+//   }
+// }
+// @keyframes animate-out {
+//   0% {
+//     transform: scale(1);
+//   }
+//   50% {
+//     transform: scale(1.2);
+//   }
+//   100% {
+//     transform: scale(0);
+//   }
+// }
+
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
 .slide-fade-enter-active {
-  animation: animate-in .6s;
+  transition: all .3s ease;
 }
 .slide-fade-leave-active {
-  animation: animate-out .6s;
+  transition: all 0s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
-@keyframes animate-in {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes animate-out {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(0);
-  }
+.slide-fade-enter, .slide-fade-leave-active {
+  transform: translateX(10px);
+  opacity: 0;
 }

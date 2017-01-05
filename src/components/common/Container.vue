@@ -1,8 +1,8 @@
 <template>
   <div id="container">
     <TopBar></TopBar>
-    <transition>
-      <router-view class='content'></router-view>
+    <transition name="slide-fade">
+      <router-view class="content"></router-view>
     </transition>
   </div>
 </template>
@@ -16,7 +16,8 @@ export default {
   }
 }
 </script>
-<style lang="sass">
-.content
+<style lang="scss">
+.content {
   padding: 10px;
+}
 </style>
