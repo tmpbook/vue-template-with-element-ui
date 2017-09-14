@@ -2,7 +2,7 @@
 
 > A Vue.js template with element UI.
 
-click [DEME](https://tmpbook.github.io/vue-template-with-element-ui/)
+[LIVE DEME](https://tmpbook.github.io/vue-template-with-element-ui/)
 
 ## Build Setup
 
